@@ -5,12 +5,6 @@ const buttonBag = document.querySelector('#buttonBag')
 const firstShop = document.querySelector('.firstDivCart')
 
 
-//llamadas desplegable
-const buttonQuestions = document.querySelectorAll(".linkQuestions")
-const textQuestion = document.querySelectorAll(".pQuestion")
-const arrowQuestion = document.querySelectorAll(".arrowQuestion")
-
-
 selectorButtons.forEach((addToCardButton) => {
     addToCardButton.addEventListener('click', addToCardClicked)
 });
@@ -40,6 +34,7 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
         }
     }
     const shoppingCardRow = document.createElement('div')
+    shoppingCardRow.setAttribute("class","totaldown")
     shoppingCardRow.classList.add("itemInTheCard")
 
     const shoppingCardContent = `
@@ -82,8 +77,9 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
 function updateShoppingCartTotal() {
     let total = 0;
     const shoppingCartTotal = document.querySelector('.totalPrice')
+    shoppingCartTotal.setAttribute("class","totalPriceStyle")
+    document.querySelector(".totaldown").appendChild(shoppingCartTotal)
     shoppingcartItems = document.querySelectorAll('.shoppingCartItem')
-
     shoppingcartItems.forEach(shoppingCartItem => {
         const shoppingCartItemElement = shoppingCartItem.querySelector('.shoppingCartItemPrice')
         const shoppingCartItemPrice = Number(shoppingCartItemElement.textContent.replace('€', ''))
@@ -92,7 +88,7 @@ function updateShoppingCartTotal() {
         total = total + shoppingCartItemPrice * shoppingCartItemQuantity
         total.toFixed(2)
     })
-    shoppingCartTotal.innerHTML = `${total}`
+    shoppingCartTotal.innerHTML = `${total}€`
 
 
 
@@ -122,8 +118,14 @@ buttonBag.onclick = (e) => {
 }
 
 
-//desplegable
+
+
+//llamadas desplegable
+const buttonQuestions = document.querySelectorAll(".linkQuestions")
+const textQuestion = document.querySelectorAll(".pQuestion")
+const arrowQuestion = document.querySelectorAll(".arrowQuestion")
 const chevronUp = document.querySelectorAll(".arrowQuestion")
+//desplegable
 buttonQuestions.forEach((buttonQuestion, key) => {
     buttonQuestion.addEventListener("click", () => {
         event.preventDefault()
