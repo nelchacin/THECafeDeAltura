@@ -1,0 +1,681 @@
+*{
+    margin: none;
+    padding: none;
+
+}
+
+body {
+
+    font-family: 'Outfit', sans-serif;
+}
+
+
+nav {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2B2A2B;
+    color: #ffff;
+    font-size: 14px;
+
+}
+
+.navWords {
+    font-size: 15px;
+    line-height: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+    padding: 7px;
+    padding-left: 60px;
+    margin-right: 12px;
+
+}
+
+
+#cafeAlturaLogo {
+    padding-top: 14px;
+    padding-left: 60px;
+}
+
+#bagIcon {
+    text-decoration: none;
+    color: white;
+    margin-left: 120px;
+}
+
+#sigIn {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    border: #515051;
+    background-color: #515051;
+    font-size: 12px;
+    border-radius: 4px;
+    
+}
+
+#phoneIcon {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgPhone {
+    height: 18px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+div.section2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 150px;
+    background-color:
+     rgb(227, 222, 215, 0.3);
+}
+
+.section2text {
+    width: 640px;
+    padding-top: 130px;
+
+
+
+}
+
+.section2Img {
+    width: 640;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 180px;
+}
+
+p.section2P {
+    color: #2A5B45;
+    font-weight: 700;
+}
+
+.aSection2 {
+    text-decoration: none;
+    box-shadow: 0px 0px 4px #515051;
+    ;
+
+}
+
+.section2Img img {
+    box-shadow: 0px 0px 4px #515051;
+}
+
+
+#buttonDescubrir {
+    background-color: black;
+    color: #ffff;
+    padding: 12px;
+    margin-right: 30px;
+    border-radius: 4px;
+}
+
+#buttonComprar {
+    background-color: #2A5B45;
+
+    color: #ffff;
+    padding: 12px;
+    margin-right: 30px;
+    border-radius: 4px;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    background-image: url(../Assets/images/backgroundsection3.jfif);
+    height: auto;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+.divIcon {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 316px;
+    height: 232px;
+    margin: 15px;
+    background-color: #ffff;
+    border-radius: 8px;
+}
+
+#h2Section3 {
+    text-align: center;
+    font-size: 22px;
+    color: #ffff;
+    padding-top: 35px;
+}
+
+.section3Img {
+    width: 60px;
+    height: 55px;
+    background-color: #2A5B45;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+h3.h3Section3 {
+    font-size: 5px;
+}
+.divSection3 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+#pHours{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 15px;
+}
+
+.section4 {
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 35px;
+}
+
+.card {
+   
+    margin: 10px;
+}
+
+#h2Section4 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #2A5B45;
+    padding: 20px 0px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn {
+    background-color: #2A5B45;
+    border: none;
+
+}
+
+.imgSec4 {
+    padding-top: 25px;
+}
+
+.verTodos {
+    padding-top: 35px;
+}
+
+#verTodosSection4 {
+    text-decoration: none;
+    color: black;
+}
+
+
+.section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #2A5B45;
+    padding-top: 25px;
+}
+
+.section5 img {
+    width: 10px;
+    height: 6px;
+}
+
+.section5 h3 {
+    width: 228px;
+    height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.section5A1 {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+}
+
+.section5A1 h4 {
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.section5A2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 668px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+}
+
+.section5A2 h4 {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.section5A3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 668px;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+}
+
+.section5A3 h4 {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+#tittleandRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.linkResolvemos {
+    color: #FFFFFF;
+    padding-top: 15px;
+    font-size: 14px;
+    padding-bottom: 40px;
+
+}
+
+.linkResolvemos:Hover {
+    color: #ffff;
+    ;
+}
+
+
+details {
+
+    border-radius: 20px;
+    background-color: #ffff;
+}
+
+div.section6 {
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.section6text {
+    width: 640px;
+    padding-top: 130px;
+    padding-left: 20px;
+
+}
+
+.section6Img {
+    width: 640px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+
+.articleSection6 {
+    display: flex;
+    justify-content: start;
+}
+
+#verTodosSection6 {
+    text-decoration: none;
+    color: #374151;
+}
+
+#section6H3 {
+    color: #2A5B45;
+}
+
+.section7 {
+    background-color: #E3DED7;
+    height: auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 588px;
+    height: auto;
+    background-color: #FFFFFF;
+}
+
+.input {
+    border-radius: 8px;
+}
+
+#phoneCode {
+    width: 68px;
+    height: 38px;
+}
+
+
+.phoneBox {
+    display: flex;
+
+}
+
+textarea {
+    width: 470px;
+    height: 122px;
+
+}
+
+
+.mailSect7 {
+    display: flex;
+
+}
+
+.mailSect7 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.phoneNumberSect7 {
+    display: flex;
+}
+
+.phoneNumberSect7 img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.textSection7 {
+    padding-top: 80px;
+    padding: 80 30px;
+}
+
+.textSection7 {
+    color: #6B7280;
+}
+
+.textSection7 h5 {
+    color: #374151;
+}
+
+.textSection7 a {
+    color: #374151;
+}
+
+.form label {
+    margin-top: 30px;
+    color: #374151;
+    font-size: 12px;
+}
+
+label {
+    color: #374151;
+}
+
+#checkBoxForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-top: 18px;
+}
+
+.checkbox {
+    margin-right: 15px;
+}
+
+#enviarForm {
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: #2A5B45;
+    background-color: #2A5B45;
+    color: #FFFFFF;
+    width: 90px;
+    height: 40px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+
+}
+
+.privacyandTerms {
+    color: #374151;
+}
+
+footer {
+    height: 250px;
+    background-color: #1F1815;
+}
+
+.col1F {
+    padding-left: 15px;
+}
+
+.col1F p {
+    padding-top: 20px;
+    color: #E3DED7;
+    font-weight: bold;
+}
+
+#cafedeAlturaLogoF {
+    padding-top: 25px;
+}
+
+.buttonF {
+    background-color: #515051;
+}
+
+.buttonF a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+#phoneButtonF {
+    width: 182px;
+    height: 48px;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+#mailButtonF {
+    width: 232px;
+    height: 48px;
+    margin-top: 16px;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.col2F {
+    margin-top: 60px;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+
+}
+
+.col2F a {
+    padding-top: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.col3F {
+    margin-top: 60px;
+
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+
+}
+
+.col3F a {
+    padding-top: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.lastSection {
+    height: 50px;
+    background-color: #2B2A2B;
+}
+
+.lastSection p {
+    text-align: center;
+    padding: 12px 0;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.section4 .card:hover {
+    background-color: #E3DED7;
+    ;
+}
+
+#heroImage {
+    border-radius: 20px;
+}
+
+#localPicture {
+    border-radius: 20px;
+}
+
+#localPicture {
+    border-radius: 20px;
+}
+
+.divShoppingCard {
+    display: inline-block;
+}
+
+/* .shoppingCard {
+    position: absolute!important;
+    top: 60px;
+    left: 1295px;
+    color: whitesmoke;
+    font-size: 10px;
+    padding: 30px;
+    background-color: #2B2A2B;
+    max-width: 250px;
+
+}
+
+.imgShoppingCard{
+    width: 50px;
+    height: 50px;
+}
+.itemIntheCard{
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    
+
+} */
+.shoppingCard {
+    position: absolute;
+    top: 50px;
+    right: 310.5px;
+    background-color: #2B2A2B;
+    color: whitesmoke;
+    font-size: 14px;
+    width: 600px;
+    height: auto;
+    padding: 0px, 10px, 15px, 0px;
+    display: none;
+}
+
+.shopping-cart-items {
+    background-color: #2B2A2B;
+    padding: 40px;
+
+}
+
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+
+.shopping-cart-total {
+    min-height: 96px;
+
+}
+
+.linkQuestions {
+    text-decoration: none;
+    color: #1F1815;
+}
+
+.linkQuestions:hover {
+    color: #1F1815;
+}
+
+.pQuestion {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+.open_close {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.buttonDelete {
+    margin-right: 40px;
+}
+
+.totalPriceStyle {
+    font-weight: bolder;
+    padding: 15px;
+    margin-left: 480px;
+    border: solid;
+    border-color: whitesmoke;
+    background-color: #2A5B45;
+    ;
+}
