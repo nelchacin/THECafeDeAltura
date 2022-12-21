@@ -63,6 +63,7 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
             <button class="btn btn-danger buttonDelete" type="button">X</button>
         </div>
     </div>
+    <div id="totaBox"></div>
 </div>`;
     ;
     shoppingCardRow.innerHTML = shoppingCardContent
