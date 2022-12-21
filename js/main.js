@@ -3,10 +3,34 @@ const selectorButtons = document.querySelectorAll('.btn');
 const ShoppingCardItemsContainer = document.querySelector('.shoppingCard')
 const buttonBag = document.querySelector('#buttonBag')
 const firstShop = document.querySelector('.firstDivCart')
+const tittleProduct = document.querySelector('.card-title')
+const priceProduct = document.querySelector('.price')
+const imgProduct = document.querySelector('.imgSec4')
+
+axios
+.get(`https://cafe-de-altura-api.vercel.app/api/products`)
+.then(response=>{
+
+    const picturesCoffee =response.data.products
+    picturesCoffee.slice(0,4).forEach(product => {
+        const cardProducts = document.createElement('div')
+            cardProducts.setAttribute("class","col-3 card")
+            cardProducts.setAttribute("style","width: 18rem;")
+            document.querySelector("#productShopContainer").appendChild(cardProducts)
+            cardProducts.innerHTML = `<div class="card-body">
+            <img src= "${product.img_url}" class="imgSec4"  class="card-img-top"
+                alt="Product green coffee">
+            <h5 class="card-title">${product.brand}</h5>
+            <p class="card-text"> <span class="price">${product.price}</span> €</p>
+            <a href="#"  class="btn btn-primary addProduct">Añadir</a>`      
+    })
+})
+
 
 
 selectorButtons.forEach((addToCardButton) => {
     addToCardButton.addEventListener('click', addToCardClicked)
+    console.log(selectorButtons);
 });
 
 function addToCardClicked(event) {
@@ -58,7 +82,6 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
             <button class="btn btn-danger buttonDelete" type="button">X</button>
         </div>
     </div>
-    <div id="totaBox"></div>
 </div>`;
     ;
     shoppingCardRow.innerHTML = shoppingCardContent
@@ -72,14 +95,13 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
 
     shoppingCardRow.querySelector('.shoppingCartItemQuantity')
         .addEventListener('change', quantityChanged);
+       
 
 }
 
 function updateShoppingCartTotal() {
     let total = 0;
     const shoppingCartTotal = document.querySelector('.totalPrice')
-    shoppingCartTotal.setAttribute("class","totalPriceStyle")
-    document.querySelector(".totaldown").appendChild(shoppingCartTotal)
     shoppingcartItems = document.querySelectorAll('.shoppingCartItem')
     shoppingcartItems.forEach(shoppingCartItem => {
         const shoppingCartItemElement = shoppingCartItem.querySelector('.shoppingCartItemPrice')
@@ -88,8 +110,11 @@ function updateShoppingCartTotal() {
         const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)
         total = total + shoppingCartItemPrice * shoppingCartItemQuantity
         total.toFixed(2)
+        //------AQUI ES DONDE TENGO QUE HACER EL LOCAL STORAGE-------
+        console.log(shoppingCartItemPrice,shoppingCartItemQuantity, total );
     })
-    shoppingCartTotal.innerHTML = `${total}€`
+    shoppingCartTotal.innerHTML = `${total}`
+    
 
 
 

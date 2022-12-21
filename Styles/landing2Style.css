@@ -5,7 +5,12 @@ padding: 0;
 
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+
 }
 nav {
     
@@ -63,4 +68,40 @@ nav {
     height: 18px;
     margin-right: 10px;
     margin-top: 4px;
+}
+
+
+.card {
+   
+    margin: 10px;
+}
+
+#h2Section4 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #2A5B45;
+    padding: 20px 0px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.btn {
+    background-color: #2A5B45;
+    border: none;
+
+}
+
+.imgSec4 {
+    padding-top: 25px;
+}
+
+.verTodos {
+    padding-top: 35px;
+}
+
+#verTodosSection4 {
+    text-decoration: none;
+    color: black;
 }
