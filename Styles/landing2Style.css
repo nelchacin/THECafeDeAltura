@@ -5,12 +5,10 @@ padding: 0;
 
 main{
     display: grid;
-    flex-direction:column;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    padding-bottom: 35px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
 
+   width: 1200px;
 }
 nav {
     
@@ -72,8 +70,8 @@ nav {
 
 
 .card {
-   
-    margin: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
 }
 
 #h2Section4 {
@@ -104,4 +102,155 @@ nav {
 #verTodosSection4 {
     text-decoration: none;
     color: black;
+}
+.section3 {
+    display: flex;
+    justify-content: center;
+    background-image: url(../Assets/images/backgroundsection3.jfif);
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+.divIcon {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 316px;
+    height: 232px;
+    margin: 15px;
+    background-color: #ffff;
+    border-radius: 8px;
+}
+
+#h2Section3 {
+    text-align: center;
+    font-size: 22px;
+    color: #ffff;
+    padding-top: 35px;
+}
+
+.section3Img {
+    width: 60px;
+    height: 55px;
+    background-color: #2A5B45;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+h3.h3Section3 {
+    font-size: 5px;
+}
+.divSection3 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 12px;
+}
+#pHours{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 15px;
+}
+
+footer {
+    height: 250px;
+    background-color: #1F1815;
+}
+
+.col1F {
+    padding-left: 15px;
+}
+
+.col1F p {
+    padding-top: 20px;
+    color: #E3DED7;
+    font-weight: bold;
+}
+
+#cafedeAlturaLogoF {
+    padding-top: 25px;
+}
+
+.buttonF {
+    background-color: #515051;
+}
+
+.buttonF a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#phoneButtonF {
+    width: 182px;
+    height: 48px;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+#mailButtonF {
+    width: 232px;
+    height: 48px;
+    margin-top: 16px;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.col2F {
+    margin-top: 60px;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+
+}
+
+.col2F a {
+    padding-top: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.col3F {
+    margin-top: 60px;
+
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+
+}
+
+.col3F a {
+    padding-top: 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.lastSection {
+    height: 50px;
+    background-color: #2B2A2B;
+}
+
+.lastSection p {
+    text-align: center;
+    padding: 12px 0;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.section4 .card:hover {
+    background-color: #E3DED7;
+    ;
 }

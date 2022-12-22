@@ -21,17 +21,32 @@ axios
             <img src= "${product.img_url}" class="imgSec4"  class="card-img-top"
                 alt="Product green coffee">
             <h5 class="card-title">${product.brand}</h5>
-            <p class="card-text"> <span class="price">${product.price}</span> €</p>
-            <a href="#"  class="btn btn-primary addProduct">Añadir</a>`      
+            <p class="card-text"> <span class="price">${product.price}</span>,00 €</p>
+            <a href="#"  class="btn btn-primary addProduct">Añadir</a>`   
+            
+ 
+
     })
+const selectorButtons = document.querySelectorAll('.btn');
+const ShoppingCardItemsContainer = document.querySelector('.shoppingCard')
+const buttonBag = document.querySelector('#buttonBag')
+const firstShop = document.querySelector('.firstDivCart')
+const tittleProduct = document.querySelector('.card-title')
+const priceProduct = document.querySelector('.price')
+const imgProduct = document.querySelector('.imgSec4')
+
+selectorButtons.forEach((addToCardButton) => {
+    addToCardButton.addEventListener('click', addToCardClicked)
+});
+
+
+    
 })
 
 
 
-selectorButtons.forEach((addToCardButton) => {
-    addToCardButton.addEventListener('click', addToCardClicked)
-    console.log(selectorButtons);
-});
+
+
 
 function addToCardClicked(event) {
     event.preventDefault()
