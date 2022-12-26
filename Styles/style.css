@@ -79,16 +79,12 @@ div.section2 {
 .section2text {
     width: 640px;
     padding-top: 130px;
-
-
-
 }
 
 .section2Img {
-    width: 640;
+    
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 180px;
 }
 
 p.section2P {

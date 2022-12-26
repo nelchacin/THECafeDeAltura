@@ -250,7 +250,92 @@ footer {
     font-weight: bold;
 }
 
-.section4 .card:hover {
+.card:hover {
     background-color: #E3DED7;
     ;
+}
+
+.divShoppingCard {
+    display: inline-block;
+}
+
+.shoppingCard {
+    position: absolute;
+    top: 50px;
+    right: 310.5px;
+    background-color: #2B2A2B;
+    color: whitesmoke;
+    font-size: 14px;
+    width: 600px;
+    height: auto;
+    padding: 0px, 10px, 15px, 0px;
+    display: none;
+}
+
+.shopping-cart-items {
+    background-color: #2B2A2B;
+    padding: 40px;
+
+}
+
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+
+.shopping-cart-total {
+    min-height: 96px;
+
+}
+
+.linkQuestions {
+    text-decoration: none;
+    color: #1F1815;
+}
+
+.linkQuestions:hover {
+    color: #1F1815;
+}
+
+.pQuestion {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+}
+
+.open_close {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.buttonDelete {
+    margin-right: 40px;
+}
+
+.totalPriceStyle {
+    font-weight: bolder;
+    padding: 10px;
+    margin-left: 460px;
+    border: solid;
+    border-color: whitesmoke;
+    background-color: #2A5B45;
+    font-size: 12px
+    ;
+}
+
+#productShopContainer{
+padding-top: 20px;
 }
