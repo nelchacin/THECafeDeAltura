@@ -1,0 +1,94 @@
+*{
+    margin: none;
+    padding: none;
+
+}
+
+body {
+
+    font-family: 'Outfit', sans-serif;
+}
+
+
+nav {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2B2A2B;
+    color: #ffff;
+    font-size: 14px;
+
+}
+
+.navWords {
+    font-size: 15px;
+    line-height: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+    padding: 7px;
+    padding-left: 60px;
+    margin-right: 12px;
+
+}
+
+
+#cafeAlturaLogo {
+    padding-top: 14px;
+    padding-left: 60px;
+}
+
+#bagIcon {
+    text-decoration: none;
+    color: white;
+    margin-left: 120px;
+}
+
+#sigIn {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    border: #515051;
+    background-color: #515051;
+    font-size: 12px;
+    border-radius: 4px;
+    
+}
+
+#phoneIcon {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgPhone {
+    height: 18px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+#h2Section4 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #2A5B45;
+    padding: 20px 0px;
+}
+.form-check{
+    display: flex;
+    flex-direction: column;
+}
+
+.dateCVC{
+    display: flex;
+    flex-direction: row;
+}
+.contentDateCVC{
+    display: flex;
+    flex-direction: column;
+}
+#bizum{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  
+}

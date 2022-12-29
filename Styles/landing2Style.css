@@ -7,8 +7,8 @@ main{
     display: grid;
     justify-content: center;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-
    width: 1200px;
+   margin-left: 250px;
 }
 nav {
     
@@ -339,3 +339,4 @@ footer {
 #productShopContainer{
 padding-top: 20px;
 }
+

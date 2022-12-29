@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../Styles/formulario.css">
+    <title>Checkout</title> 
+</head>
+<body>
+    <nav class="row" id="cafeAlturaLogo">
+        <div class="col-2">
+            <img src="../Assets/images/cafedealtura.com.svg" alt="cafeDeAlturaIcon">
+            <img src="../Assets/images/tasaCafé.svg" alt="coffe">
+        </div>
+        <div class="col-6">
+            <a class="navWords" href="#">Tienda</a>
+            <a class="navWords" href="#">Suscripción</a>
+            <a class="navWords" href="#">Para empresas</a>
+            <a class="navWords" href="#">Sobre nosotros</a>
+            <a class="navWords" href="#">Contacto</a>
+        </div>
+        <div class="col-2" id="phoneIcon">
+            <img src="../Assets/images/phone.png" alt="phoneIcone" class="imgPhone">
+            <p>+34 919 49 05 18</p>
+        </div>
+        <div class="col-2">
+            <a id="sigIn" href="#">Iniciar Sesion</a>
+            <a href="#" id="buttonBag"><svg id="bagIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z" />
+                </svg></a>
+        </div>
+    </nav>
+    <h2 id="h2Section4">Checkout</h2>
+    <main class="row">
+        <div class="col-6">
+        <h6>Seleccionar método de pago</h6>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+             <h6>Tarjeta de débito</h6>
+             <p>Opción estándar sin seguimiento</p>
+            </label>
+                <label for="nameForm">Titular</label>
+                <input type="text" id="NameForm" placeholder="Nombre del titular">
+                <label for="emailForm">Número de Tarjeta</label>
+                <input type="text" id="numeroDeTarjeta" placeholder="1234 1234 1234 1234">
+                
+                <div class="dateCVC">
+                    <div class="contentDateCVC">
+                        <label for="fechaCaducidad">Fecha de caducidad</label>
+                        <input type="text" id="fechaCaducidad" placeholder="MM/YY">
+                    </div>
+                    <div class="contentDateCVC">  
+                        <label for="emailForm">CVC</label>
+                        <input type="text" id="numeroDeTarjeta" placeholder="123">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+            <label class="form-check-label" for="exampleRadios1">
+             <h6>Transferencia bancaria a la cuenta ES12 1234 1234 123457890</h6>
+             <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+            </label>
+            <hr>
+                <label class="form-check-label" for="exampleRadios1" id="Bizum">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <h6>Bizum</h6>
+                    <img src="../Assets/images/BIZUM.png" alt="">
+                </label>
+        </div>
+        
+    <div class="col-6">
+        <h6>Total Carrito</h6>
+
+    </div>
+
+
+
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+</body>
+</html>

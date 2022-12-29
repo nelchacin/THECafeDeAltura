@@ -38,6 +38,7 @@ const imgProduct = document.querySelector('.imgSec4')
 
 selectorButtons.forEach((addToCardButton) => {
     addToCardButton.addEventListener('click', addToCardClicked)
+    
 });
 
     
@@ -93,7 +94,7 @@ selectorButtons.forEach((addToCardButton) => {
                 </div>
             </div>
         </div>`;
-            ;
+        
             shoppingCardRow.innerHTML = shoppingCardContent
             ShoppingCardItemsContainer.appendChild(shoppingCardRow)
             updateShoppingCartTotal()
@@ -106,7 +107,7 @@ selectorButtons.forEach((addToCardButton) => {
             shoppingCardRow.querySelector('.shoppingCartItemQuantity')
                 .addEventListener('change', quantityChanged);
                
-        
+        console.log(typeof(shoppingCardContent));
         }
         
         function updateShoppingCartTotal() {
@@ -122,6 +123,7 @@ selectorButtons.forEach((addToCardButton) => {
                 total.toFixed(2)
                 //------AQUI ES DONDE TENGO QUE HACER EL LOCAL STORAGE-------
                 console.log(shoppingCartItemPrice,shoppingCartItemQuantity, total );
+                
             })
             shoppingCartTotal.innerHTML = `${total}`
             
