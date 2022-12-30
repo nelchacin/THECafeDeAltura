@@ -7,6 +7,8 @@ const tittleProduct = document.querySelector('.card-title')
 const priceProduct = document.querySelector('.price')
 const imgProduct = document.querySelector('.imgSec4')
 
+
+
 axios
 .get(`https://cafe-de-altura-api.vercel.app/api/products`)
 .then(response=>{
@@ -37,6 +39,8 @@ const imgProduct = document.querySelector('.imgSec4')
 
 selectorButtons.forEach((addToCardButton) => {
     addToCardButton.addEventListener('click', addToCardClicked)
+
+
 });
 
 
@@ -58,6 +62,8 @@ function addToCardClicked(event) {
     const imgProduct = item.querySelector('.imgSec4').src;
 
     addItemtoShoppingCard(tittleProduct, priceProduct.toFixed(2), imgProduct)
+   
+
 
 }
 
@@ -110,6 +116,8 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
 
     shoppingCardRow.querySelector('.shoppingCartItemQuantity')
         .addEventListener('change', quantityChanged);
+
+    
        
 
 }
@@ -125,10 +133,14 @@ function updateShoppingCartTotal() {
         const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)
         total = total + shoppingCartItemPrice * shoppingCartItemQuantity
         total.toFixed(2)
+        shoppingCartTotal.innerHTML = `${total}`
+        
+        localStorage.setItem("ShoppingCard",JSON.stringify(shoppingCartItemPrice))
         //------AQUI ES DONDE TENGO QUE HACER EL LOCAL STORAGE-------
-        console.log(shoppingCartItemPrice,shoppingCartItemQuantity, total );
+        
+        // console.log(shoppingCartItemPrice,shoppingCartItemQuantity, total );
     })
-    shoppingCartTotal.innerHTML = `${total}`
+    
     
 
 
@@ -157,7 +169,6 @@ buttonBag.onclick = (e) => {
         ShoppingCardItemsContainer.style.display = 'none'
     }
 }
-
 
 
 

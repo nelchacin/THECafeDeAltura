@@ -16,17 +16,21 @@ axios
             document.querySelector('main').appendChild(pictureBox)
             pictureBox.innerHTML=`
             <div class="card" style="width: 18rem;">
-            <div class="card-body">
+            <div class="card-body " >
                 <img class="imgSec4" src="${product.img_url}" class="card-img-top"
                     alt="Product green coffee">
                 <h5 class="card-title">${product.brand}</h5>
                 <p class="card-text"> <span class="price">${product.price}</span>,00 €</p>
-                <a href="#" id="cafeCostaRica" class="btn btn-primary addProduct">Añadir</a>
+                <a href="#" id="cafeCostaRica" class="btn btn-primary addProduct" disabled="${product.available}">Añadir</a>
             </div>
         </div>
         
             `
-            
+            if (product.available===false) {
+                pictureBox.style.opacity='60%'
+                pictureBox.style.cursor='not-allowed'
+                pictureBox.style.pointerEvents='none'
+            }
         });
     const selectorButtons = document.querySelectorAll('.btn');
 const ShoppingCardItemsContainer = document.querySelector('.shoppingCard')
@@ -74,7 +78,7 @@ selectorButtons.forEach((addToCardButton) => {
         
             const shoppingCardContent = `
             <div class="row shoppingCartItem">
-            <div class="col-6">
+            <div class="col-6 ">
                 <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
                     <img src=${imgProduct} class="shopping-cart-image">
                     <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${tittleProduct}</h6>
