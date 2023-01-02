@@ -117,8 +117,6 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
     shoppingCardRow.querySelector('.shoppingCartItemQuantity')
         .addEventListener('change', quantityChanged);
 
-    
-       
 
 }
 
@@ -133,13 +131,13 @@ function updateShoppingCartTotal() {
         const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)
         total = total + shoppingCartItemPrice * shoppingCartItemQuantity
         total.toFixed(2)
-        shoppingCartTotal.innerHTML = `${total}`
         
-        localStorage.setItem("ShoppingCard",JSON.stringify(shoppingCartItemPrice))
+        
         //------AQUI ES DONDE TENGO QUE HACER EL LOCAL STORAGE-------
         
         // console.log(shoppingCartItemPrice,shoppingCartItemQuantity, total );
     })
+    shoppingCartTotal.innerHTML = `${total}`
     
     
 

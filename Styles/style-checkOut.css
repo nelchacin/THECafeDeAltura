@@ -86,9 +86,56 @@ nav {
     display: flex;
     flex-direction: column;
 }
-#bizum{
+.bizum{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   
+}
+.datosUsuario{
+    display: flex;
+    flex-direction: column;
+}
+.direccionForm{
+    display: flex;
+    flex-direction: row;
+}
+.poblacionCP{
+    display: flex;
+    flex-direction: column;
+}
+.lastSection {
+    height: 50px;
+    background-color: #2B2A2B;
+}
+
+.lastSection p {
+    text-align: center;
+    padding: 12px 0;
+    color: #ffff;
+    font-weight: bold;
+}
+.subtotalEnvio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#IVA{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pagarPedido{
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: #2A5B45;
+    background-color: #2A5B45;
+    color: #FFFFFF;
+    width: 90px;
+    height: 40px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
 }
