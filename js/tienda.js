@@ -47,6 +47,9 @@ selectorButtons.forEach((addToCardButton) => {
 
     
         })
+        
+        updateShoppingCartTotal()
+        
 
         function addToCardClicked(event) {
             event.preventDefault()
@@ -111,11 +114,10 @@ selectorButtons.forEach((addToCardButton) => {
             shoppingCardRow.querySelector('.shoppingCartItemQuantity')
                 .addEventListener('change', quantityChanged);
                
-        console.log(typeof(shoppingCardContent));
         }
         
         function updateShoppingCartTotal() {
-            let total = 0;
+            let total = localStorage.getItem("TOTAL")*1
             const shoppingCartTotal = document.querySelector('.totalPrice')
             shoppingcartItems = document.querySelectorAll('.shoppingCartItem')
             shoppingcartItems.forEach(shoppingCartItem => {
@@ -123,17 +125,15 @@ selectorButtons.forEach((addToCardButton) => {
                 const shoppingCartItemPrice = Number(shoppingCartItemElement.textContent.replace('€', ''))
                 const shoppingCartItemQuantityElement = shoppingCartItem.querySelector('.shoppingCartItemQuantity')
                 const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)
-                total = total + shoppingCartItemPrice * shoppingCartItemQuantity
+                total = localStorage.getItem("TOTAL")*1 + shoppingCartItemPrice * shoppingCartItemQuantity
                 total.toFixed(2)
-                //------AQUI ES DONDE TENGO QUE HACER EL LOCAL STORAGE-------
-                console.log(shoppingCartItemPrice,shoppingCartItemQuantity, total );
+                
+
                 
             })
             shoppingCartTotal.innerHTML = `${total}`
-            
         
-        
-        
+    
         }
         function removeShoppingCartItem(event) {
             const buttonClicked = event.target;

@@ -8,7 +8,7 @@ main{
     justify-content: center;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    width: 1200px;
-   margin-left: 250px;
+   
 }
 nav {
     
@@ -339,5 +339,11 @@ footer {
 #productShopContainer{
 padding-top: 20px;
 }
+.productCardWrapper{
+    justify-content: center;
+    margin-left: 350px;
+    padding-bottom: 50px;
+}
+
 
 

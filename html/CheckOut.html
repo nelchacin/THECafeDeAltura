@@ -41,54 +41,57 @@
     </nav>
     <h2 id="h2Section4">Checkout</h2>
     <main class="row">
-        <div class="col-6">
-        <h6>Seleccionar método de pago</h6>
+        <div class="formulario col-6">
+        <h6 class="seleccionarMP">Seleccionar método de pago</h6>
         <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-             <h6>Tarjeta de débito</h6>
-             <p>Opción estándar sin seguimiento</p>
-            </label>
-                <label for="titualrForm">Titular</label>
-                <input type="text" id="titualrForm" placeholder="Nombre del titular">
-                <label for="numeroTarjetaForm">Número de Tarjeta</label>
-                <input type="text" id="numeroTarjetaForm" placeholder="1234 1234 1234 1234">
+            <div class="tarjetaDebito">
+                <input class="form-check-input input1" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                <h6 class="tarjetaTittle">Tarjeta de débito</h6>
+                <p class="tarjetaP">Opción estándar sin seguimiento</p>
+                </label>
+            </div>
+            
+                <label for="titualrForm" class="tittleForm">Titular</label>
+                <input type="text" id="titualrForm" placeholder="Nombre del titular" class="placeForm">
+                <label for="numeroTarjetaForm" class="tittleForm">Número de Tarjeta</label>
+                <input type="text" id="numeroTarjetaForm" placeholder="1234 1234 1234 1234" class="placeForm">
                 
                 <div class="dateCVC">
-                    <div class="contentDateCVC">
-                        <label for="fechaCaducidad">Fecha de caducidad</label>
-                        <input type="text" id="fechaCaducidad" placeholder="MM/YY">
+                    <div class="contentDateCVC" id="fechaCaducidad2">
+                        <label for="fechaCaducidad" class="tittleForm">Fecha de caducidad</label>
+                        <input type="text" id="fechaCaducidad" placeholder="MM/YY" class="placeForm">
                     </div>
-                    <div class="contentDateCVC">  
-                        <label for="emailForm">CVC</label>
-                        <input type="text" id="numeroDeTarjeta" placeholder="123">
+                    <div class="contentDateCVC" id="CVC">  
+                        <label for="CVC2" class="tittleForm">CVC</label>
+                        <input type="text" id="CVC2" placeholder="123" class="placeForm">
                     </div>
                 </div>
             </div>
             <hr>
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+            <input class="form-check-input input2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
             <label class="form-check-label" for="exampleRadios1">
-             <h6>Transferencia bancaria a la cuenta ES12 1234 1234 123457890</h6>
-             <p>Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+             <h6 class="transferenciaBancaria">Transferencia bancaria a la cuenta ES12 1234 1234 123457890</h6>
+             <p class="transferenciaBancariaP">Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
             </label>
             <hr>
                 <label class="form-check-label bizum" for="exampleRadios1">
-                <input class="form-check-input bizum" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <h6>Bizum</h6>
-                    <img class="Bizum" src="../Assets/images/BIZUM.png" alt="">
+                <input class="form-check-input bizum" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                <h6 id="bizum">Bizum</h6>
+                    <img class="Bizum" id="bizumLogo" src="../Assets/images/BIZUM.png" alt="">
                 </label>
                 <div class="datosUsuario">
-                    <h6>Dirección de envío</h6>
-                    <label for="nameForm">Nombre </label>
-                    <input type="text" id="NameForm" >
-                    <label for="apellidoForm">Apellidos</label>
-                    <input type="text" id="apellidoForm" >
-                    <label for="telefonoForm">Teléfono</label>
-                    <input type="text" id="telefonoForm" placeholder="+34 600 6000 600">
-                    <label for="emailForm">Email</label>
-                    <input type="text" id="emailForm" >
-                    <label for="paisForm">Pais</label>
-                    <select name="pais" for="paisForm">
+                    <h6 id="direccionE">Dirección de envío</h6>
+                    <label for="nameForm" class="tittleForm">Nombre </label>
+                    <input type="text" id="NameForm" class="placeForm place2" >
+                    <label for="apellidoForm" class="tittleForm">Apellidos</label>
+                    <input type="text" id="apellidoForm" class="placeForm place2" >
+                    <label for="telefonoForm" class="tittleForm">Teléfono</label>
+                    <input type="text" id="telefonoForm" placeholder="+34 600 6000 600" class="placeForm place2">
+                    <label for="emailForm" class="tittleForm">Email</label>
+                    <input type="text" id="emailForm" class="placeForm place2">
+                    <label for="paisForm" class="tittleForm">Pais</label>
+                    <select name="pais" for="paisForm" class="placeForm place2">
                         <option value="NON" selected>Ninguno</option>
                         <option value="AF">Afganistán</option>
                         <option value="AL">Albania</option>
@@ -327,42 +330,42 @@
                         </select>
                         <div class="direccionForm">
                             <div class="poblacionCP">
-                                <label for="poblacionForm">Población</label>
-                                <input type="text" id="poblacionForm" >
+                                <label for="poblacionForm" class="tittleForm">Población</label>
+                                <input type="text" id="poblacionForm" class="placeForm cp2" >
                             </div>
-                            <div class="poblacionCP">
-                                <label for="CPForm">CP</label>
-                                <input type="text" id="CPForm" placeholder="123">
+                            <div class="poblacionCP" id="Cp2">
+                                <label for="CPForm" class="tittleForm">CP</label>
+                                <input type="text" id="CPForm" placeholder="123" class="placeForm cp2">
                             </div>
                         </div>
                         <div class="direccionForm">
                             <div class="poblacionCP">
-                                <label for="calleForm">Calle</label>
-                                <input type="text" id="calleForm" >
+                                <label for="calleForm" class="tittleForm">Calle</label>
+                                <input type="text" id="calleForm" class="placeForm direccion2">
                             </div>
-                            <div class="poblacionCP">
-                                <label for="portalForm">Nº</label>
-                                <input type="text" id="portalForm">
+                            <div class="poblacionCP separate2">
+                                <label for="portalForm" class="tittleForm">Nº</label>
+                                <input type="text" id="portalForm" class="placeForm direccion2">
                             </div>
-                            <div class="poblacionCP">
-                                <label for="pisoForm">Piso</label>
-                                <input type="text" id="pisoForm" >
+                            <div class="poblacionCP separate2">
+                                <label for="pisoForm" class="tittleForm">Piso</label>
+                                <input type="text" id="pisoForm"class="placeForm direccion2" >
                             </div>
-                            <div class="poblacionCP">
-                                <label for="puertaForm">Puerta</label>
-                                <input type="text" id="puertaForm" >
+                            <div class="poblacionCP separate2">
+                                <label for="puertaForm" class="tittleForm" >Puerta</label>
+                                <input type="text" id="puertaForm" class="placeForm direccion2">
                             </div>
                         </div>
                 </div>
         </div>
        
         
-        <div class="col-6">
-            <h6>Total Carrito</h6>
+        <div class="col-6 totalBox">
+            <h6 id="subtotal">Total del carrito</h6>
             <hr>
             <div class="subtotalEnvio">
              <p>SUBTOTAL</p>
-             <p></p>
+             <p id="subtotalPrint"></p>
             </div>
             <div class="subtotalEnvio">
                 <p>ENVÍO</p>
@@ -371,9 +374,9 @@
             <hr>
             <div class="subtotalEnvio">
                 <p>TOTAL</p>
-                <p></p>
+                <p id="totalPrint"></p>
             </div>
-            <p id="IVA">Incluye $$$$ de IVA</p>
+            <p id="IVA"></p>
             <a id="pagarPedido" href="#">Pagar y realizar pedido</a>
             
             
@@ -382,7 +385,7 @@
     <div class="lastSection row">
         <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
     </div>
-    
+    <script src="../js/CheckOut.Js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

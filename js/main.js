@@ -39,6 +39,7 @@ const imgProduct = document.querySelector('.imgSec4')
 
 selectorButtons.forEach((addToCardButton) => {
     addToCardButton.addEventListener('click', addToCardClicked)
+    
 
 
 });
@@ -46,11 +47,6 @@ selectorButtons.forEach((addToCardButton) => {
 
     
 })
-
-
-
-
-
 
 function addToCardClicked(event) {
     event.preventDefault()
@@ -60,6 +56,8 @@ function addToCardClicked(event) {
     const tittleProduct = item.querySelector('.card-title').textContent;
     const priceProduct = item.querySelector('.price').textContent * 1;
     const imgProduct = item.querySelector('.imgSec4').src;
+
+
 
     addItemtoShoppingCard(tittleProduct, priceProduct.toFixed(2), imgProduct)
    
@@ -104,10 +102,12 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
         </div>
     </div>
 </div>`;
+
     ;
     shoppingCardRow.innerHTML = shoppingCardContent
     ShoppingCardItemsContainer.appendChild(shoppingCardRow)
     updateShoppingCartTotal()
+    
 
     shoppingCardRow
         .querySelector('.buttonDelete')
@@ -116,9 +116,10 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
 
     shoppingCardRow.querySelector('.shoppingCartItemQuantity')
         .addEventListener('change', quantityChanged);
-
+        
 
 }
+
 
 function updateShoppingCartTotal() {
     let total = 0;
@@ -131,13 +132,22 @@ function updateShoppingCartTotal() {
         const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)
         total = total + shoppingCartItemPrice * shoppingCartItemQuantity
         total.toFixed(2)
-        
-        
+       let storagePaint= document.querySelector(".shoppingCard")
+        localStorage.setItem("CARD",storagePaint.outerHTML)
+       console.log(typeof(storagePaint));
+                
+       localStorage.setItem("ITEMPRICE",shoppingCartItemPrice)
+       localStorage.setItem("ITEMQUANTITY",shoppingCartItemQuantity)
         //------AQUI ES DONDE TENGO QUE HACER EL LOCAL STORAGE-------
         
         // console.log(shoppingCartItemPrice,shoppingCartItemQuantity, total );
     })
     shoppingCartTotal.innerHTML = `${total}`
+    localStorage.setItem("TOTAL",total)
+   
+    
+
+    
     
     
 
