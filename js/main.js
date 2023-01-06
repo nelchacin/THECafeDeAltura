@@ -76,6 +76,7 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
             return
         }
     }
+    const shoppingCardTotal= document.querySelector(".shoppBox")
     const shoppingCardRow = document.createElement('div')
     shoppingCardRow.setAttribute("class","totaldown")
     shoppingCardRow.classList.add("itemInTheCard")
@@ -105,7 +106,7 @@ function addItemtoShoppingCard(tittleProduct, priceProduct, imgProduct) {
 
     ;
     shoppingCardRow.innerHTML = shoppingCardContent
-    ShoppingCardItemsContainer.appendChild(shoppingCardRow)
+    ShoppingCardItemsContainer.appendChild(shoppingCardRow).appendChild(shoppingCardTotal)
     updateShoppingCartTotal()
     
 

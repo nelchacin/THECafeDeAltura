@@ -326,14 +326,36 @@ footer {
 }
 
 .totalPriceStyle {
+    width: 120px;
     font-weight: bolder;
     padding: 10px;
-    margin-left: 460px;
     border: solid;
     border-color: whitesmoke;
     background-color: #2A5B45;
-    font-size: 12px
-    ;
+    font-size: 12px;
+    margin-right: 12px;
+}
+
+.checkOutB{
+    top: 80px;
+    font-weight: bolder;
+    padding: 10px;
+    border: solid;
+    border-color: whitesmoke;
+    background-color: #2A5B45;
+    font-size: 12px;
+    text-decoration: none;
+    color: whitesmoke;
+    height: 44px;
+    margin-right: 20px;
+}
+
+.shoppBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+    
 }
 
 #productShopContainer{

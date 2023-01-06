@@ -75,6 +75,7 @@ selectorButtons.forEach((addToCardButton) => {
                     return
                 }
             }
+            const shoppingCardTotal= document.querySelector(".shoppBox")
             const shoppingCardRow = document.createElement('div')
             shoppingCardRow.setAttribute("class","totaldown")
             shoppingCardRow.classList.add("itemInTheCard")
@@ -103,7 +104,7 @@ selectorButtons.forEach((addToCardButton) => {
         </div>`;
         
             shoppingCardRow.innerHTML = shoppingCardContent
-            ShoppingCardItemsContainer.appendChild(shoppingCardRow)
+            ShoppingCardItemsContainer.appendChild(shoppingCardRow).appendChild(shoppingCardTotal)
             updateShoppingCartTotal()
         
             shoppingCardRow
@@ -117,6 +118,7 @@ selectorButtons.forEach((addToCardButton) => {
         }
         
         function updateShoppingCartTotal() {
+            const checkOutB= document.querySelector(".checkOutB")
             let total = localStorage.getItem("TOTAL")*1
             const shoppingCartTotal = document.querySelector('.totalPrice')
             shoppingcartItems = document.querySelectorAll('.shoppingCartItem')
@@ -132,7 +134,8 @@ selectorButtons.forEach((addToCardButton) => {
                 
             })
             shoppingCartTotal.innerHTML = `${total}`
-        
+
+           
     
         }
         function removeShoppingCartItem(event) {
