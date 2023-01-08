@@ -1,0 +1,172 @@
+*{
+    margin: none;
+    padding: none;
+
+}
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+
+nav {
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2B2A2B;
+    color: #ffff;
+    font-size: 14px;
+
+}
+
+.firstsection{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+main{
+    justify-content:space-between;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+.navWords {
+    font-size: 15px;
+    line-height: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+    padding: 7px;
+    padding-left: 60px;
+    margin-right: 12px;
+
+}
+
+.formulario{
+    margin-left: 60px;
+}
+
+
+#cafeAlturaLogo {
+    padding-top: 14px;
+    padding-left: 60px;
+}
+
+#bagIcon {
+    text-decoration: none;
+    color: white;
+    margin-left: 120px;
+}
+
+#sigIn {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    border: #515051;
+    background-color: #515051;
+    font-size: 12px;
+    border-radius: 4px;
+    
+}
+
+#phoneIcon {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgPhone {
+    height: 18px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.cestaTittle {
+    text-align: center;
+    font-size: 1.5em;
+    color: #2A5B45;
+    padding: 20px 0px;
+}
+.lastSection {
+    height: 50px;
+    background-color: #2B2A2B;
+}
+.lastSection p {
+    text-align: center;
+    padding: 12px 0;
+    color: #ffff;
+    font-weight: bold;
+}
+.totalBox{
+    margin-right: 80px;
+    justify-content: flex-end;
+    width: 384px;
+    height: 320px;
+    background-color: #F7F5F3;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.subtotalEnvio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+#productTittle2{
+    font-size: 18px;
+}
+
+#seleccionarEnvio{
+    font-size: 18px;
+}
+
+.carrito{
+    height: 400px;
+}
+.envioStandard{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.envioPrecio{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+.titulosEnvio{
+    font-size: 14px;
+    font-weight: bold;
+}
+.pEnvios{
+    font-size: 14px;
+}
+
+.precioEnvio{
+font-size: 16px;
+font-weight: bold;
+}
+
+#gotoCheckOut{
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: #2A5B45;
+    background-color: #2A5B45;
+    color: #FFFFFF;
+    width: 90px;
+    height: 40px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#gotoShop{
+    color: #2A5B45;
+    text-decoration: none;
+    font-weight: bold;
+}
