@@ -75,8 +75,8 @@ margin-bottom: 10px;
 }
 .totalBox{
 
-    margin-left: 100px;
-    width: 1900px;
+    margin-right: 80px;
+    margin-left: 80px;
     background-color: #F7F5F3;
     padding: 24px;
     border-radius: 10px;
@@ -90,8 +90,7 @@ h6{
 }
 
 #backToShop{
-    margin-left: 950px;
-    text-align: center;
+    margin-left: 890px;
     padding: 5px;
     border-style: solid;
     border-color: #2A5B45;

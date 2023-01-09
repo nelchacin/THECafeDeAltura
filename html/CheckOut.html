@@ -39,19 +39,19 @@
         <h6 class="seleccionarMP">Seleccionar método de pago</h6>
         <div class="form-check">
             <div class="tarjetaDebito">
-                <input class="form-check-input input1" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                <h6 class="tarjetaTittle">Tarjeta de débito</h6>
-                <p class="tarjetaP">Opción estándar sin seguimiento</p>
+                <input class="form-check-input input1 radioPago tarjetaBizum transTar creditcard" type="radio" name="exampleRadios" id="exampleRadios1" value="1">
+                <label class="form-check-label" for="exampleRadios1 tarjetaBizum transTar creditcard">
+                <h6 class="tarjetaTittle tarjetaBizum transTar creditcard">Tarjeta de débito</h6>
+                <p class="tarjetaP tarjetaBizum transTar creditcard">Opción estándar sin seguimiento</p>
                 </label>
             </div>
             
-                <label for="titualrForm" class="tittleForm">Titular</label>
-                <input type="text" id="titualrForm" placeholder="Nombre del titular" class="placeForm">
-                <label for="numeroTarjetaForm" class="tittleForm">Número de Tarjeta</label>
-                <input type="text" id="numeroTarjetaForm" placeholder="1234 1234 1234 1234" class="placeForm">
+                <label for="titualrForm" class="tittleForm tarjetaBizum transTar creditcard">Titular</label>
+                <input type="text" id="titualrForm" placeholder="Nombre del titular" class="placeForm tarjetaBizum transTar creditcard">
+                <label for="numeroTarjetaForm" class="tittleForm tarjetaBizum transTar creditcard">Número de Tarjeta</label>
+                <input type="text" id="numeroTarjetaForm" placeholder="1234 1234 1234 1234" class="placeForm tarjetaBizum transTar creditcard">
                 
-                <div class="dateCVC">
+                <div class="dateCVC tarjetaBizum transTar creditcard">
                     <div class="contentDateCVC" id="fechaCaducidad2">
                         <label for="fechaCaducidad" class="tittleForm">Fecha de caducidad</label>
                         <input type="text" id="fechaCaducidad" placeholder="MM/YY" class="placeForm">
@@ -63,18 +63,18 @@
                 </div>
             </div>
             <hr>
-            <input class="form-check-input input2" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
-            <label class="form-check-label" for="exampleRadios1">
-             <h6 class="transferenciaBancaria">Transferencia bancaria a la cuenta ES12 1234 1234 123457890</h6>
-             <p class="transferenciaBancariaP">Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
+            <input class="form-check-input input2 radioPago " type="radio" name="exampleRadios" id="exampleRadios1" value="2" >
+            <label class="form-check-label " for="exampleRadios1">
+             <h6 class="transferenciaBancaria transferBizum  transTar transfer">Transferencia bancaria a la cuenta ES12 1234 1234 123457890</h6>
+             <p class="transferenciaBancariaP transferBizum  transTar transfer">Será necesario recibir el comprobante de la transferencia para preparar tu pedido</p>
             </label>
             <hr>
-                <label class="form-check-label bizum" for="exampleRadios1">
-                <input class="form-check-input bizum" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                <h6 id="bizum">Bizum</h6>
-                    <img class="Bizum" id="bizumLogo" src="../Assets/images/BIZUM.png" alt="">
+                <label class="form-check-label bizum bizum2" for="exampleRadios1">
+                <input class="form-check-input bizum radioPago bizum2 " type="radio" name="exampleRadios" id="exampleRadios1" value="3">
+                <h6 class="transferBizum tarjetaBizum bizum2" id="bizum">Bizum</h6>
+                    <img class="Bizum transferBizum tarjetaBizum bizum2" id="bizumLogo" src="../Assets/images/BIZUM.png" alt="">
                 </label>
-                <div class="datosUsuario">
+                <div class="datosUsuario transferBizum tarjetaBizum bizum2">
                     <h6 id="direccionE">Dirección de envío</h6>
                     <label for="nameForm" class="tittleForm">Nombre </label>
                     <input type="text" id="NameForm" class="placeForm place2" >
