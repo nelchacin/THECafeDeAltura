@@ -1,0 +1,157 @@
+*{
+    margin: none;
+    padding: none;
+}
+
+nav {
+    
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2B2A2B;
+    color: #ffff;
+    font-size: 14px;
+
+}
+
+.navWords {
+    font-size: 15px;
+    line-height: 30px;
+    align-items: center;
+    text-decoration: none;
+    color: #ffff;
+    padding: 7px;
+    padding-left: 60px;
+    margin-right: 12px;
+
+}
+
+
+#cafeAlturaLogo {
+    padding-top: 14px;
+    padding-left: 60px;
+}
+
+#bagIcon {
+    text-decoration: none;
+    color: white;
+    margin-left: 120px;
+}
+
+#sigIn {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    border: #515051;
+    background-color: #515051;
+    font-size: 12px;
+    border-radius: 4px;
+    
+}
+
+#phoneIcon {
+    display: flex;
+    flex-direction: row;
+}
+
+.imgPhone {
+    height: 18px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+
+.card {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.succesCheckOut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.totalBox{
+
+    margin-left: 100px;
+    width: 1900px;
+    background-color: #F7F5F3;
+    padding: 24px;
+    border-radius: 10px;
+}
+.productsShop{
+    height: 300px;
+}
+h6{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#backToShop{
+    margin-left: 950px;
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: #2A5B45;
+    background-color: #2A5B45;
+    color: #FFFFFF;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.subtotalEnvio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pSucces{
+    font-size: 14px;
+    font-weight: bold;
+}
+#IVA{
+    display: flex;
+    justify-content: flex-end;
+    color: #515051;
+    font-size: 12px;
+}
+.lastSection {
+    margin-top: 60px;
+    height: 50px;
+    background-color: #2B2A2B;
+}
+.lastSection p {
+    text-align: center;
+    padding: 12px 0;
+    color: #ffff;
+    font-weight: bold;
+}
+#checked{
+margin-top: 30px;
+margin-bottom: 20px;    
+height: 50px;
+width: 50px;
+}
+
+#succesP{
+    font-size: 20px;
+    color: #2A5B45;
+    padding-bottom: 15px;
+}
+#numberP{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    width: 350px;
+    padding-bottom: 30px;
+    
+}

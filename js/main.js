@@ -6,6 +6,7 @@ const firstShop = document.querySelector('.firstDivCart')
 const tittleProduct = document.querySelector('.card-title')
 const priceProduct = document.querySelector('.price')
 const imgProduct = document.querySelector('.imgSec4')
+const precioEnvio= localStorage.getItem("precioEnvio")*1
 
 
 
@@ -131,7 +132,7 @@ function updateShoppingCartTotal() {
         const shoppingCartItemPrice = Number(shoppingCartItemElement.textContent.replace('€', ''))
         const shoppingCartItemQuantityElement = shoppingCartItem.querySelector('.shoppingCartItemQuantity')
         const shoppingCartItemQuantity = Number(shoppingCartItemQuantityElement.value)
-        total = total + shoppingCartItemPrice * shoppingCartItemQuantity
+        total = precioEnvio+ total + shoppingCartItemPrice * shoppingCartItemQuantity
         total.toFixed(2)
        let storagePaint= document.querySelector(".shoppingCard")
         localStorage.setItem("CARD",storagePaint.outerHTML)
