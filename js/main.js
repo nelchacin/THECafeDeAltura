@@ -136,6 +136,7 @@ function updateShoppingCartTotal() {
         total.toFixed(2)
        let storagePaint= document.querySelector(".shoppingCard")
         localStorage.setItem("CARD",storagePaint.outerHTML)
+        console.log(typeof(storagePaint));
        console.log(typeof(storagePaint));
                 
        localStorage.setItem("ITEMPRICE",shoppingCartItemPrice)

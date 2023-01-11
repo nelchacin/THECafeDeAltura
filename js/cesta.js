@@ -11,11 +11,11 @@ let findSelected =() =>{
    }
    if(selected===9){
     precioEnvio.innerHTML=`${selected},00`
-    // let shoppingCardTotal= document.querySelector('.totalPrice')
-    // let shoppingCardTotal2=totalB+selected
-    // localStorage.setItem("TOTAL",shoppingCardTotal2)
+    let shoppingCardTotal= document.querySelector('.totalPrice')
+    let shoppingCardTotal2=totalB+selected
+    localStorage.setItem("TOTAL",shoppingCardTotal2)
 
-    // shoppingCardTotal.innerHTML=`${shoppingCardTotal2}`
+    shoppingCardTotal.innerHTML=`${shoppingCardTotal2}`
     
 
     
