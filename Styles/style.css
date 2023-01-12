@@ -698,9 +698,47 @@ padding-top: 20px;
 }
 
 .shoppBox{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+    top: 50px;
+    right: 310.5px;
+    background-color: #2B2A2B;
+    color: whitesmoke;
+    font-size: 14px;
+    width: 600px;
+    height: auto;
+    padding: 0px, 10px, 15px, 0px;
+    
+}
+    
+
+.totalDown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.totalBuying{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 20px;
-    
+}
+
+.shopButton{
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: #2A5B45;
+    background-color: #2A5B45;
+    color: whitesmoke;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    cursor: pointer;
 }
