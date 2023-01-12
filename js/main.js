@@ -4,10 +4,10 @@
 // / llamadas carrito 
 let  shoppingCard2=[]
 let shopContent=document.getElementById("productShopContainer")
-
+const seeTheCar = document.getElementById("bagIcon")
 let boddy =document.querySelector(".body")
 let shopBox= document.querySelector(".shoppBox")
-console.log(seeTheCar);
+
 
 axios
 .get(`https://cafe-de-altura-api.vercel.app/api/products`)

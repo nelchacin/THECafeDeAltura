@@ -1,4 +1,4 @@
-const seeTheCar = document.getElementById("bagIcon")
+
 const drawTheCar =() =>{
     shopBox.innerHTML=""
     shopBox.style.display ="flex"
@@ -30,19 +30,22 @@ const drawTheCar =() =>{
                  <p class="item-price mb-0 shoppingCartItemPrice">${product.price},00€</p>
              </div>
          </div>
-         <div class="col-4">
-             <div
-                class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
-                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
-                    value="1">
-                <button class="btn btn-danger buttonDelete" type="button">X</button>
-            </div>
-        </div>
-    </div>`;
+         </div>
+             `;
 
 
     shopBox.append(carContent)
-
+    let boxOfButton =document.createElement("div")
+    boxOfButton.className="col-4"
+    carContent.append(boxOfButton)
+    let eraseButton = document.createElement("button")
+    eraseButton.innerText= "X"
+    eraseButton.className="btn btn-danger buttonDelete"
+    boxOfButton.append(eraseButton)
+    
+    eraseButton.addEventListener("click",eraseButton2)
+    
+    
 })
 const total = shoppingCard2.reduce((acc,the)=>acc +the.price, 0)
 const totalBuying = document.createElement("div")
@@ -51,6 +54,19 @@ totalBuying.innerHTML = `<p>TOTAL: ${total},00</p>`
 shopBox.append(totalBuying)
 }
 seeTheCar.addEventListener("click",drawTheCar)
+
+
+const eraseButton2 = () =>{
+    
+    const foundId = shoppingCard2.find((product)=>product.id);
+    shoppingCard2=shoppingCard2.filter((carId)=>{
+        return carId !== foundId
+        
+    })
+
+    drawTheCar()
+    console.log(shoppingCard2);
+}
 
 
 
