@@ -698,7 +698,7 @@ padding-top: 20px;
 }
 
 .shoppBox{
-    position: absolute;
+    position:fixed;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -741,4 +741,7 @@ padding-top: 20px;
     margin-bottom: 40px;
     border-radius: 4px;
     cursor: pointer;
+}
+.cantidadProduct{
+    color: whitesmoke;
 }

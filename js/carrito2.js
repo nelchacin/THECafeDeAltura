@@ -19,31 +19,39 @@ const drawTheCar =() =>{
     shoppingCard2.forEach((product)=>{
     let carContent =document.createElement("div")
     carContent.className="row shoppingCartItem"
-    carContent.innerHTML=`<div class="col-6">
+    carContent.innerHTML=`<div class="col-6 available">
+            
             <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
                 <img src=${product.img} class="shopping-cart-image">
                  <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${product.name}</h6>
             </div>
          </div>
          <div class="col-2">
-             <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                 <p class="item-price mb-0 shoppingCartItemPrice">${product.price},00€</p>
+             <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3"> 
+             <p class="item-price mb-0 shoppingCartItemPrice">${product.price},00€</p>
              </div>
          </div>
-         </div>
+    
              `;
-
+          
 
     shopBox.append(carContent)
     let boxOfButton =document.createElement("div")
     boxOfButton.className="col-4"
     carContent.append(boxOfButton)
+    cardCuantityandButton= document.createElement("div")
+    cardCuantityandButton.className="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3"
+    boxOfButton.append(cardCuantityandButton)
+    let cuantityCar=document.createElement("p")
+    cuantityCar.innerText=product.v
+    cardCuantityandButton.append(cuantityCar)
     let eraseButton = document.createElement("button")
     eraseButton.innerText= "X"
     eraseButton.className="btn btn-danger buttonDelete"
-    boxOfButton.append(eraseButton)
+    cardCuantityandButton.append(eraseButton)
     
     eraseButton.addEventListener("click",eraseButton2)
+    
     
     
 })

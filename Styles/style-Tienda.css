@@ -361,12 +361,62 @@ footer {
 #productShopContainer{
 padding-top: 20px;
 }
-.productCardWrapper{
+#productShopContainer{
+    display: grid;
+    justify-content: center;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1200px;
     justify-content: center;
     margin-left: 350px;
     padding-bottom: 50px;
 }
+.shoppBox{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+    top: 50px;
+    right: 310.5px;
+    background-color: #2B2A2B;
+    color: whitesmoke;
+    font-size: 14px;
+    width: 600px;
+    height: auto;
+    padding: 0px, 10px, 15px, 0px;
+    
+}
+    
 
+.totalDown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
+}
+.totalBuying{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.shopButton{
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: #2A5B45;
+    background-color: #2A5B45;
+    color: whitesmoke;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cantidadProduct{
+    color: whitesmoke;
+}
 
 

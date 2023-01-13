@@ -14,7 +14,7 @@ axios
 .then(response=>{
 
 const picturesCoffee =response.data.products
-console.log(picturesCoffee);
+console.log(picturesCoffee.slice(0,4));
 picturesCoffee.slice(0,4).forEach (product=>{
        let content = document.createElement("div")
        content.setAttribute("class","col-3 card")
@@ -35,13 +35,15 @@ picturesCoffee.slice(0,4).forEach (product=>{
         content.append(buy)
 
         buy.addEventListener("click", () =>{
-            shoppingCard2.push({
+        const repeat = shoppingCard2.some((rP)=> rP.id === product._id)  
+        console.log(repeat);
+        shoppingCard2.push({
                 id: product._id,
                 name: product.brand,
                 price:product.price,
                 img:product.img_url,
                 available:product.available,
-                v:product.__v,
+                v:product.__v+1,
             })
             console.log(shoppingCard2);
         })
