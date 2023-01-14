@@ -42,6 +42,7 @@ nav {
     text-decoration: none;
     color: white;
     margin-left: 120px;
+    text-decoration: none;
 }
 
 #sigIn {
@@ -206,7 +207,7 @@ h3.h3Section3 {
 .btn {
     background-color: #2A5B45;
     border: none;
-
+    
 }
 
 .imgSec4 {
@@ -663,7 +664,14 @@ footer {
 }
 
 .buttonDelete {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
     margin-right: 40px;
+    width: 30px;
+    height: 30px;
+    
 }
 
 
@@ -745,3 +753,21 @@ padding-top: 20px;
 .cantidadProduct{
     color: whitesmoke;
 }
+
+.cuantityCar2{
+    background-color: #2A5B45;
+    color: whitesmoke;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    text-decoration: none;
+    opacity: 0%;
+}
+
+#buttonContent2{
+    display: flex;
+    justify-content: center;
+    align-items: ce;
+}
+
+

@@ -1,7 +1,6 @@
 
 const drawTheCar =() =>{
     shopBox.innerHTML=""
-    shopBox.style.display ="flex"
     const cardBox= document.createElement("div")
     cardBox.setAttribute("class","totalDown")
     cardBox.innerHTML =`<h6 class="tittleCar">CARRITO</h6>`
@@ -12,6 +11,7 @@ const drawTheCar =() =>{
 
     shopButton.addEventListener("click", ()=>{
         shopBox.style.display ="none"
+    
     })
 
     cardBox.append(shopButton)
@@ -19,8 +19,8 @@ const drawTheCar =() =>{
     shoppingCard2.forEach((product)=>{
     let carContent =document.createElement("div")
     carContent.className="row shoppingCartItem"
-    carContent.innerHTML=`<div class="col-6 available">
-            
+    carContent.innerHTML=`
+    <div class="col-6 available">
             <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
                 <img src=${product.img} class="shopping-cart-image">
                  <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${product.name}</h6>
@@ -31,11 +31,13 @@ const drawTheCar =() =>{
              <p class="item-price mb-0 shoppingCartItemPrice">${product.price},00€</p>
              </div>
          </div>
+         
     
              `;
           
 
     shopBox.append(carContent)
+
     let boxOfButton =document.createElement("div")
     boxOfButton.className="col-4"
     carContent.append(boxOfButton)
@@ -43,8 +45,12 @@ const drawTheCar =() =>{
     cardCuantityandButton.className="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3"
     boxOfButton.append(cardCuantityandButton)
     let cuantityCar=document.createElement("p")
-    cuantityCar.innerText=product.v
+    cuantityCar.innerText=product.cuantity
     cardCuantityandButton.append(cuantityCar)
+    let totalForEachProduct= document.createElement("p")
+    totalForEachProduct.innerText="Total: "+ product.cuantity * product.price
+    cardCuantityandButton.append(totalForEachProduct)
+
     let eraseButton = document.createElement("button")
     eraseButton.innerText= "X"
     eraseButton.className="btn btn-danger buttonDelete"
@@ -54,8 +60,9 @@ const drawTheCar =() =>{
     
     
     
+    
 })
-const total = shoppingCard2.reduce((acc,the)=>acc +the.price, 0)
+const total = shoppingCard2.reduce((acc,the)=>acc + the.price *the.cuantity, 0)
 const totalBuying = document.createElement("div")
 totalBuying.className="totalBuying"
 totalBuying.innerHTML = `<p>TOTAL: ${total},00</p>`
@@ -71,10 +78,23 @@ const eraseButton2 = () =>{
         return carId !== foundId
         
     })
-
+    carCounter ()
+    saveLocal()
     drawTheCar()
-    console.log(shoppingCard2);
+    
 }
+
+const carCounter= () =>{
+    cuantityCar.style.opacity= ("100%")
+    const carLength = shoppingCard2.length
+    localStorage.setItem("CarLength",JSON.stringify(carLength))
+    cuantityCar.innerText= JSON.parse(localStorage.getItem("CarLength"))
+    if(shoppingCard2.length===0){
+        cuantityCar.style.opacity= ("0%")   
+    }
+}
+carCounter ()
+
 
 
 

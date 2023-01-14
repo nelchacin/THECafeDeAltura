@@ -2,11 +2,13 @@
 // console.log(addProduct);
 
 // / llamadas carrito 
-let  shoppingCard2=[]
+let  shoppingCard2=JSON.parse(localStorage.getItem("CAR"))||[]
 let shopContent=document.getElementById("productShopContainer")
 const seeTheCar = document.getElementById("bagIcon")
+const cuantityCar =document.getElementById("cuatityCar2")
 let boddy =document.querySelector(".body")
 let shopBox= document.querySelector(".shoppBox")
+
 
 
 axios
@@ -36,20 +38,48 @@ picturesCoffee.slice(0,4).forEach (product=>{
 
         buy.addEventListener("click", () =>{
         const repeat = shoppingCard2.some((rP)=> rP.id === product._id)  
-        console.log(repeat);
+       if(repeat){
+        shoppingCard2.map((prod)=>{
+            if(prod.id===product._id){
+                prod.cuantity++
+            }
+        })
+       }else{
+
         shoppingCard2.push({
                 id: product._id,
                 name: product.brand,
                 price:product.price,
                 img:product.img_url,
                 available:product.available,
-                v:product.__v+1,
+                cuantity:1
             })
+        }
             console.log(shoppingCard2);
+            carCounter ()
+            saveLocal ()
+            drawTheCar ()
         })
-})
     
 })
+
+})
+
+const saveLocal= () =>{localStorage.setItem("CAR",JSON.stringify(shoppingCard2)) }
+seeTheCar.onclick = (e) => {
+
+        if (shopBox.style.display === 'none') {
+            shopBox.style.display = 'flex'
+    
+    
+        } else {
+            shopBox.style.display = 'none'
+    
+    }
+}
+
+
+
 // const selectorButtons = document.querySelectorAll('.btn');
 
 // const ShoppingCardItemsContainer = document.querySelector('.shoppingCard')
