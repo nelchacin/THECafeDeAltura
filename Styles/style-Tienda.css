@@ -418,5 +418,13 @@ padding-top: 20px;
 .cantidadProduct{
     color: whitesmoke;
 }
-
+.cuantityCar2{
+    background-color: #2A5B45;
+    color: whitesmoke;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    text-decoration: none;
+    opacity: 0%;
+}
 

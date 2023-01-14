@@ -1,8 +1,9 @@
 
-let  shoppingCard2=[]
+let  shoppingCard2=JSON.parse(localStorage.getItem("CAR"))||[]
 let shopContent=document.getElementById("productShopContainer")
 const seeTheCar = document.getElementById("bagIcon")
 let boddy =document.querySelector(".body")
+const cuantityCar =document.getElementById("cuatityCar2")
 let shopBox= document.querySelector(".shoppBox")
 axios
 .get(`https://cafe-de-altura-api.vercel.app/api/products`)
@@ -29,27 +30,53 @@ picturesCoffee.forEach (product=>{
             content.style.pointerEvents='none'
             }
         
-        let buy =document.createElement("button")
-        buy.innerText="Añadir"
-        buy.setAttribute("class","btn btn-primary addProduct")
-        content.append(buy)
-
-        buy.addEventListener("click", () =>{
-        const repeat = shoppingCard2.some((rP)=> rP.id === product._id)  
-        console.log(repeat);
-        shoppingCard2.push({
-                id: product._id,
-                name: product.brand,
-                price:product.price,
-                img:product.img_url,
-                available:product.available,
-                v:product.__v+1,
-            })
-            console.log(shoppingCard2);
-        })
-})
+            let buy =document.createElement("button")
+            buy.innerText="Añadir"
+            buy.setAttribute("class","btn btn-primary addProduct")
+            content.append(buy)
     
-})
+            buy.addEventListener("click", () =>{
+            const repeat = shoppingCard2.some((rP)=> rP.id === product._id)  
+           if(repeat){
+            shoppingCard2.map((prod)=>{
+                if(prod.id===product._id){
+                    prod.cuantity++
+                }
+            })
+           }else{
+    
+            shoppingCard2.push({
+                    id: product._id,
+                    name: product.brand,
+                    price:product.price,
+                    img:product.img_url,
+                    available:product.available,
+                    cuantity:1
+                })
+            }
+                console.log(shoppingCard2);
+                carCounter ()
+                saveLocal ()
+                drawTheCar ()
+            })
+        
+    })
+    
+    })
+    
+    const saveLocal= () =>{localStorage.setItem("CAR",JSON.stringify(shoppingCard2)) }
+    seeTheCar.onclick = (e) => {
+    
+            if (shopBox.style.display === 'none') {
+                shopBox.style.display = 'flex'
+        
+        
+            } else {
+                shopBox.style.display = 'none'
+        
+        }
+    }
+    
 
 
 // OLD CAR
