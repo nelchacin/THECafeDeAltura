@@ -1,13 +1,9 @@
+let  shoppingCard2=JSON.parse(localStorage.getItem("CAR"))||[]
 const pEnvio =document.querySelector("#precioEnvio")
 let envioLocal = localStorage.getItem("precioEnvio")*1
-let pedidoGratis="GRATIS"
+let pedidoGratis=localStorage.getItem("PrecioEnvio")
 
-if (envioLocal===0){
-    pEnvio.innerHTML=`${pedidoGratis}`
-}
-if (envioLocal==9){
-    pEnvio.innerHTML=`${envioLocal},00`
-}
+pEnvio.innerHTML=localStorage.getItem("PrecioEnvio")
 
 const backToShop =document.querySelector("#backToShop")
 backToShop.addEventListener("click", eraseLocal)
@@ -18,3 +14,6 @@ function eraseLocal (event) {
     localStorage.clear()
     location.href="../index.html"
 }
+
+
+window.addEventListener("load", drawProductsBasket)

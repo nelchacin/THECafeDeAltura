@@ -92,7 +92,7 @@ const total = shoppingCard2.reduce((acc,the)=>acc + the.price *the.cuantity, 0)
 const totalBuying = document.createElement("div")
 totalBuying.className="totalBuying"
 totalBuying.innerHTML = `
-<a href="./html/Cesta.html">Cesta</a>
+<a href="../html/Cesta.html">Cesta</a>
 <p>TOTAL: ${total},00</p>`
 shopBox.append(totalBuying)
 localStorage.setItem("SUBTOTAL",total)

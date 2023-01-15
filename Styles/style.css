@@ -770,4 +770,19 @@ padding-top: 20px;
     
 }
 
+.cuantity{
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.btnRestSum{
+    border-radius: 60%;
+    background-color: #2A5B45;
+    color: whitesmoke;
+    border: none;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
 

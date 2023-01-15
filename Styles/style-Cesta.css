@@ -120,7 +120,12 @@ main{
 }
 
 .carrito{
-    height: 400px;
+    height: auto;
+}
+.btn {
+    background-color: #2A5B45;
+    border: none;
+
 }
 .envioStandard{
     display: flex;
@@ -169,4 +174,137 @@ font-weight: bold;
     color: #2A5B45;
     text-decoration: none;
     font-weight: bold;
+}
+.shoppBox{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 20px;
+    top: 50px;
+    right: 310.5px;
+    background-color: #2B2A2B;
+    color: whitesmoke;
+    font-size: 14px;
+    width: 600px;
+    height: auto;
+    padding: 0px, 10px, 15px, 0px;
+    
+}
+    
+
+.totalDown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.totalBuying{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.shopButton{
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: #2A5B45;
+    background-color: #2A5B45;
+    color: whitesmoke;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cantidadProduct{
+    color: whitesmoke;
+}
+.cuantityCar2{
+    background-color: #2A5B45;
+    color: whitesmoke;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    text-decoration: none;
+    opacity: 0%;
+}
+
+.divShoppingCard {
+    display: inline-block;
+}
+
+.shoppingCard {
+    position: absolute;
+    top: 50px;
+    right: 310.5px;
+    background-color: #2B2A2B;
+    color: whitesmoke;
+    font-size: 14px;
+    width: 600px;
+    height: auto;
+    padding: 0px, 10px, 15px, 0px;
+    display: none;
+}
+
+.shopping-cart-items {
+    background-color: #2B2A2B;
+    padding: 40px;
+
+}
+
+.shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+}
+
+.shopping-cart-total {
+    min-height: 96px;
+
+}
+
+/* .productStyle{
+
+} */
+.cestaProducts{
+display: flex;
+flex-direction: row;
+}
+.productImg{
+    display: flex;
+    flex-direction: row;
+}
+.totalEachProducts{
+    display: flex;
+    flex-direction: row;
+}
+.totalProduct11{
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+}
+.shoppingCartItemTitle{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 14px;
+}
+.imgInBasket{
+    width: 56px;
+    height: 56px;
 }
