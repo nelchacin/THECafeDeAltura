@@ -31,7 +31,7 @@ const drawTheCar =() =>{
                  <button class="sum btnRestSum">+</button>
                  <p class="cuantity mb-0 shoppingCartItemPrice">${product.cuantity}<p> 
                  <button class="rest btnRestSum">-</button>
-                 <p class="item-price shoppingCartItemPrice">${product.price},00€</p>
+                 <p class="item-price shoppingCartItemPrice22">${product.price},00€</p>
                  <button class="btn btn-danger buttonDelete buttonDelete2" type="button">X</button>
                  </div>
          </div>
@@ -92,8 +92,8 @@ const total = shoppingCard2.reduce((acc,the)=>acc + the.price *the.cuantity, 0)
 const totalBuying = document.createElement("div")
 totalBuying.className="totalBuying"
 totalBuying.innerHTML = `
-<a href="./html/Cesta.html">Cesta</a>
-<p>TOTAL: ${total},00</p>`
+<a class="cesta" href="./html/Cesta.html">Cesta</a>
+<p class="cesta">TOTAL: ${total},00€</p>`
 shopBox.append(totalBuying)
 localStorage.setItem("SUBTOTAL",total)
 

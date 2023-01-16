@@ -25,7 +25,7 @@ const drawProductsBasket =() =>{
         carContent22.className="row productStyle"
         carContent22.innerHTML=`
         <div class="col-3 cestaProducts">
-        <button class="sum2 btnRestSum">+</button>
+        <button class="sum2 btnRestSum styleSum">+</button>
         <p class="cuantity mb-0 shoppingCartItemPrice2">${product.cuantity}<p> 
         <button class="rest2 btnRestSum">-</button>
         </div>
@@ -34,7 +34,7 @@ const drawProductsBasket =() =>{
         <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${product.name}</h6>
         </div>
         <div class="col-3 totalEachProducts">
-        <p class="totalProduct11">${product.cuantity * product.price},00<p>
+        <p class="totalProduct11">${product.cuantity * product.price},00€<p>
         <button class="btn btn-danger buttonDelete buttonDelete22" type="button">X</button>
         </div>
         
@@ -84,6 +84,7 @@ let findSelected =() =>{
         let total44=  localStorage.setItem("TOTAL",total33)
         let total55= localStorage.getItem("")
         let iva2=total33*0.21
+        iva2.toFixed(2)
         iva.innerHTML= `Incluye ${iva2}€ de IVA`
         localStorage.setItem("IVA",iva2)
         localStorage.setItem("PrecioEnvio","GRATIS")
@@ -96,7 +97,10 @@ let findSelected =() =>{
         total22.innerHTML=`${(total33*1)+9},00`
         let iva2=(total33*1)+9
         let iva3=(iva2*0.21)
-        iva.innerHTML= `Incluye ${iva3}€ de IVA`
+       iva3.toFixed(2)
+       console.log(iva3);
+
+        iva.innerHTML= `Incluye ${iva3.toFixed(2)}€ de IVA`
         localStorage.setItem("IVA",iva3)
         let total44= localStorage.setItem("TOTAL",(total33*1)+9)
         localStorage.setItem("PrecioEnvio","9,00€")

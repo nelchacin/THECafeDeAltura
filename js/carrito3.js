@@ -3,11 +3,12 @@ const drawTheCar =() =>{
     shopBox.innerHTML=""
     const cardBox= document.createElement("div")
     cardBox.setAttribute("class","totalDown")
-    cardBox.innerHTML =`<h6 class="tittleCar">CARRITO</h6>`
+    cardBox.innerHTML =`
+    <h6 class="tittleCar">CARRITO</h6>`
     shopBox.append(cardBox)
     const shopButton = document.createElement("a")
     shopButton.innerText ="X"
-    shopButton.className ="btn btn-danger buttonDelete"
+    shopButton.className ="btn btn-danger buttonDelete buttonMain"
 
     shopButton.addEventListener("click", ()=>{
         shopBox.style.display ="none"
@@ -29,7 +30,7 @@ const drawTheCar =() =>{
                  <div class="col-6">
                  <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
                  <button class="sum btnRestSum">+</button>
-                 <p class="cuantity mb-0 shoppingCartItemPrice">${product.cuantity}<p> 
+                 <p class="cuantity mb-0 shoppingCartItemPrice22">${product.cuantity}<p> 
                  <button class="rest btnRestSum">-</button>
                  <p class="item-price shoppingCartItemPrice">${product.price},00€</p>
                  <button class="btn btn-danger buttonDelete buttonDelete2" type="button">X</button>
@@ -92,8 +93,8 @@ const total = shoppingCard2.reduce((acc,the)=>acc + the.price *the.cuantity, 0)
 const totalBuying = document.createElement("div")
 totalBuying.className="totalBuying"
 totalBuying.innerHTML = `
-<a href="../html/Cesta.html">Cesta</a>
-<p>TOTAL: ${total},00</p>`
+<a class="cesta" href="../html/Cesta.html">Cesta</a>
+<p class="cesta">TOTAL: ${total},00€</p>`
 shopBox.append(totalBuying)
 localStorage.setItem("SUBTOTAL",total)
 

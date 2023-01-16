@@ -88,8 +88,12 @@ margin-bottom: 10px;
 .btn {
     background-color: #2A5B45;
     border: none;
-
+    width: 80px;
+    margin-bottom: 15px;
+    margin-left: 90px;
+    
 }
+
 
 .imgSec4 {
     padding-top: 25px;
@@ -395,9 +399,10 @@ padding-top: 20px;
 
 }
 .totalBuying{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between
 }
 
 .shopButton{
@@ -427,4 +432,87 @@ padding-top: 20px;
     text-decoration: none;
     opacity: 0%;
 }
+
+.cafeTheAltura33{
+    padding-left: 50px;
+}
+
+.shopButton{
+    text-align: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: #2A5B45;
+    background-color: #2A5B45;
+    color: whitesmoke;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cantidadProduct{
+    color: whitesmoke;
+}
+
+.cuantityCar2{
+    background-color: #2A5B45;
+    color: whitesmoke;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    text-decoration: none;
+    opacity: 0%;
+}
+
+#buttonContent2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cuantity{
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.btnRestSum{
+    border-radius: 60%;
+    background-color: #2A5B45;
+    color: whitesmoke;
+    border: none;
+   
+}
+
+.sum{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.rest{
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 12px;
+    font-weight: bolder;
+    margin-right: 30px;
+    
+}
+
+.totalDown{
+    padding-top: 30px;
+ }
+
+ .cesta{
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: #2A5B45;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+ 
+
 

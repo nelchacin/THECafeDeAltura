@@ -90,7 +90,7 @@ h6{
 }
 
 #backToShop{
-    margin-left: 890px;
+    margin-left: 950px;
     padding: 5px;
     border-style: solid;
     border-color: #2A5B45;
@@ -152,5 +152,25 @@ width: 50px;
     font-size: 14px;
     width: 350px;
     padding-bottom: 30px;
+    
+}
+.productImg{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.imgSucces{
+   margin-top: 15px;
+   width: 56px;
+   height: 56px; 
+}
+
+.shoppingCartItemTitle{
+    padding-top: 20px;
+}
+.totalProduct11{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
     
 }
