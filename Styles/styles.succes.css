@@ -90,7 +90,6 @@ h6{
 }
 
 #backToShop{
-    margin-left: 950px;
     padding: 5px;
     border-style: solid;
     border-color: #2A5B45;
@@ -173,4 +172,9 @@ width: 50px;
     justify-content: flex-end;
     font-weight: bold;
     
+}
+
+.buttonReturn{
+    display: flex;
+    justify-content: center;
 }
